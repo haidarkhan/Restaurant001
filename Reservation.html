@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reservations</title>
+
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        h5 {
+            color: white;
+            background: black;
+        }
+
+        /* division 1st = header part */
+        #header {
+            background: orange;
+            height: 70px;
+            background-attachment: fixed;
+        }
+
+        #div1 {
+            color: black;
+            width: 40%;
+            float: left;
+            line-height: 70px;
+        }
+
+        #div2 {
+            color: black;
+            width: 60%;
+            float: right;
+            line-height: 70px;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+
+        }
+        
+        #button1 {
+            font-size: larger;
+            background: black;
+            border: none;
+        }
+
+        /* MAIN BODY PART */
+        .main {
+            color: white;
+            width: 100%;
+            height: 130vh;
+            background-image: url(https://wallpaperaccess.com/full/2112.jpg);
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        table {
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .table2 {
+            color: white;
+            width: 50%;
+        }
+        audio {
+            display: none;
+        }
+        
+    </style>
+
+
+<!-- /* footer */ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- remember the link will be outside the style tag and inside the head tag -->
+
+    <style>
+        .fa {
+            padding: 10px;
+            font-size: 10px;
+            width: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 4px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        #df1 {
+            background: orange;
+            width: 30%;
+            height: 70px;
+            float: left;
+            line-height: 70px;
+        }
+
+        #df2 {
+            background: orange;
+            width: 70%;
+            height: 70px;
+            float: right;
+            line-height: 70px;
+        }
+
+        #df3 {
+            color: white;
+            background: black;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <h5>Since 1994</h5>
+    
+    <div id="header">
+
+        <div id="div1">
+            <h1><a href="http://127.0.0.1:5500/assignment2/index.html">BRESCA</a></h1>
+        </div>
+
+        <div id="div2">
+            <a href="http://127.0.0.1:5500/assignment2/Menus.html" target="_blanck">MENUS</a>
+            <a href="http://127.0.0.1:5500/assignment2/ourStory.html">OUR STORY</a>
+            
+            <a href="http://127.0.0.1:5500/assignment2/contact.html">CONTACT</a>
+            
+            <button id="button1">
+                <a style="color: white;" href="http://127.0.0.1:5500/assignment2/Reservation.html" target="_blanck">RESERVATION</a>
+            </button>
+        </div>
+
+    </div>
+
+
+
+    <div class="main">
+
+        <div>
+            <div>
+
+            <h1 style="padding-top: 30px
+            ;">
+                Table Reservation
+            </h1>
+             <div style="margin: 30px;">
+                 We would be glad to reserve a table for you at our restaurant!
+             </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <table class="table1" style="padding: 45px;;">
+                    <tr>
+                        <td><label for="">First name</label></td>
+                        <td><input type="text"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="">Last name</label></td>
+                        <td><input type="text"></td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="">Male</label></td>
+                        <td><input type="radio" name="gender"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Female</label></td>
+                        <td><input type="radio" name="gender"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="">Phone number</label>
+                        </td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">E-mail</label>
+                        </td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="date of reservation">Date of Reservation</label>
+                        </td>
+                        <td><input type="date" id="date of reservation" name="date of reservation"></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="Time">Time Slot</label>
+                        </td>
+                        <td><input type="time" id="Time" name="Time" value="12:30"></td>
+                        <small>Reception hours are 9am to 9pm</small>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Number of persons</label>
+                        </td>
+                        <td><input type="number" id="number" name="number" min="1" max="12"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Special Request</label>
+                        </td>
+                        <td><input type="text" ></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" >
+                        
+                    </tr>
+
+                    
+                </table>
+            </div>
+
+            <audio controls autoplay loop src="ordinary-day-8025.mp3"></audio>
+            <div>
+                <h2 style="margin-top: 60px;">
+                    Cancellation Terms
+                </h2>
+                <div>
+                    <p style="margin-bottom: 30px;">The following fees will apply upon notification of cancellation</p>
+                    <table class="table2">
+                        <tr>
+                            <th>Time</th>
+                            <th>Charges</th>
+                            <th>Set Lunch/Dinner</th>
+                        </tr>
+                        <tr>
+                            <td>48 hours before</td>
+                            <td>No Charges</td>
+                            <td>No Charges</td>
+                        </tr>
+                        <tr>
+                            <td>24 hours before</td>
+                            <td>450.net</td>
+                            <td>50% of the confirmed number plus taxes</td>
+                        </tr>
+                        <tr>
+                            <td>No show</td>
+                            <td>700.net</td>
+                            <td>Full amount of the confirmed number plus taxes</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="footer">
+
+        <div id="df1">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+
+        </div>
+
+        <div id="df2">
+            <a href="http://127.0.0.1:5500/assignment2/career.html?">CAREER</a>
+            <a href="http://127.0.0.1:5500/assignment2/contact.html">CONTACT</a>
+            <a href="http://127.0.0.1:5500/assignment2/Reservation.html">RESERVATION</a>
+        </div>
+
+        <div id="df3">
+            <h4> Powered by Geekster. All CopyRight &copy; are Reserved by Haidar</h4>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+</html>
